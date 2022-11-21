@@ -1,0 +1,12 @@
+{
+	"C_Cpp.errorSquiggles": "Disabled",
+	"files.associations": {
+		"stdlib.h": "c"
+	},
+	"prettier.tabWidth": 3,
+	"editor.autoIndent": "advanced",
+	"editor.insertSpaces": false,
+	"editor.tabSize": 3,
+	"prettier.useTabs": true,
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google}"
+}
