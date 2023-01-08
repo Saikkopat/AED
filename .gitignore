@@ -52,6 +52,6 @@ Mkfile.old
 dkms.conf
 
 #Personal or editor generated files
-
 *.vscode*
+*.vscode/
 *.git*
