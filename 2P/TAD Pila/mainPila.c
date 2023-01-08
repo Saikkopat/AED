@@ -29,17 +29,19 @@ void darElemento (PILA S1) {
    } while (c == 1);
 }
 
-void mostrarPila (PILA S) {
-	PILA copia = crearPila();
-	*copia = *S;
-	if (esPilaVacia(copia) == TRUE) {
-		manejaMsg(3);
-		exit(0);
-	}
-	printf("\n Elementos de la pila:\n");
-	while(esPilaVacia(copia) == FALSE)
-		printf("  %d : %d\n", (copia -> tope) + 1, desapilar(copia)); //Asignacion de valores de derecha a izquierda.
-	liberarMemoria(copia);
+void mostrarPila(PILA S) {
+  PILA copia = crearPila();
+  *copia = *S;
+  if (esPilaVacia(copia) == TRUE) {
+    manejaMsg(3);
+    exit(0);
+  }
+  printf("\n Elementos de la pila:\n");
+  while (esPilaVacia(copia) != TRUE) {
+    printf("  %d :", elemTope(copia));
+    printf(" %c\n", desapilar(copia));
+  }
+  liberarMemoria(copia);
 }
 
 PILA invertirPila (PILA S) {
