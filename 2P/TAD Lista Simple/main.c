@@ -28,6 +28,8 @@ int main() {
 	L1 = ingresaElementos(L1);
 	mostrarLista(L1);
 	L1 = borrar(L1, 1);
+	buscarElem(L1, 3);
+	buscarElem(L1, 10);
 	mostrarLista(L1);
 	printf("\n");
 	return 0;

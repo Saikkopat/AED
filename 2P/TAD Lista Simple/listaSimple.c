@@ -80,10 +80,11 @@ void buscarElem(LISTA L, int elem) {
 		manejaError(1); //Lista vacía.
 		exit(0);
 	}
-	while (actual != NULL && elem != actual -> dato) {
+	while (actual != NULL && actual -> dato != elem) {
 		actual = actual -> siguiente;
 		pos++;
 	}
+	pos++;
 	if (actual == NULL)
 		mensajes(elem, 0, 0); //No se encuentra el elemento.
 	else
@@ -124,7 +125,7 @@ void mensajes(int e, int msg, int p) {
 			printf("   Nodo %d = %d\n",p,e);
 			break;
 		case 2:
-			printf("\n El elemento %d se encuentra en la posición %d\n", e, p);
+			printf("\n  El elemento %d se encuentra en la posición %d\n", e, p);
 			break;
 		case 3:
 			printf("\n  Elementos de la lista:\n");
